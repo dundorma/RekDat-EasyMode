@@ -11,3 +11,11 @@ span {
 h2 {
   user-select: text !important;
 }
+
+* {
+  user-select: text !important;
+}
+
+html > * {
+  user-select: text !important;
+}
