@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "RekDat-EasyMode",
+  "description": "Enable selecting string and copying in datacamp",
+  "version": "1.0",
+  "icons": {
+    "16": "./icon/copyc16.png",
+    "48": "./icon/copyc48.png",
+    "128": "./icon/copyc128.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "./icon/copyc16.png",
+      "48": "./icon/copyc48.png",
+      "128": "./icon/copyc128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://assessment-v2.datacamp.com/*"
+      ],
+      "css": [
+        "main.css"
+      ],
+      "js": [
+        "contentScripts.js"
+      ]
+    }
+  ]
+}

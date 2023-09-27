@@ -1,0 +1,13 @@
+code,
+mark,
+pre {
+  user-select: text !important;
+}
+
+span {
+  user-select: text !important;
+}
+
+h2 {
+  user-select: text !important;
+}
